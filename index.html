@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Todo App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>📝 Smart Todo List</h1>
+
+    <!-- INPUT -->
+    <div class="todo-input">
+        <input type="text" id="todoText" placeholder="Enter your task...">
+        <select id="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <button id="addBtn">Add</button>
+    </div>
+
+    <!-- FILTERS -->
+    <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+    </div>
+
+    <!-- TODO LIST -->
+    <ul id="todoList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
